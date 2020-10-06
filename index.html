@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title> let's korail</title>
+    <link rel="stylesheet" href="css/common.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/gnb.js"></script>
+    <!-- 파비콘 <link rel="icon" href="assets/images/favicon.ico"> -->
+</head>
+<body>
+    <div id="skip">
+        <a href="">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="area clearfix p_r">
+                <h1 class="logo p_a">
+                    <a href=""><img src="images/common/nav_logo.png" alt="레츠코레일"></a>
+                </h1>
+                <nav id="gnb">
+                    <h2 class="blind-b">주메뉴</h2>
+                    <ul class="depth1 cblack clearfix">
+                        <li id="menu1" class="menu">
+                            <a href="">승차권 예약</a>
+                            <ul class="depth2 cblack">
+                                <li><a href="">일반 승차권</a></li>
+                                <li><a href="">할인 승차권</a></li>
+                                <li><a href="">4인 동반석</a></li>
+                                <li><a href="">관광 열차</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu2" class="menu">
+                            <a href="">관광 열차</a>
+                            <ul class="depth2">
+                                <li class="cblue">
+                                    <a href="">동해산타열차</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">동해산타열차 소개</a></li>
+                                        <li><a href="">동해산타열차 추천여행</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">서해금빛열차</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">West gold-train 소개</a></li>
+                                        <li><a href="">West gold-train 추천여행</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">백두대간협곡열차</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">V-train 소개</a></li>
+                                        <li><a href="">V-train 추천여행</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">정선아리랑열차</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">A-train 소개</a></li>
+                                        <li><a href="">A-train 추천여행</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">남도해양열차</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">S-train 소개</a></li>
+                                        <li><a href="">S-train 추천여행</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">평화열차 DMZ</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">DMZ-train 소개</a></li>
+                                        <li><a href="">DMZ-train 추천여행</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">레일크루즈해랑</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">바다열차</a></li>
+                                        <li><a href="">교육열차</a></li>
+                                        <li><a href="">국악와인열차</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu3" class="menu">
+                            <a href="">자유 여행</a>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">국내여행패스</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">내일로</a></li>
+                                        <li><a href="">문화누리패스</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cblue"><a href="">해외여행패스</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">일본패스</a></li>
+                                        <li><a href="">기차여행 만들기</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cblue"><a href="">기차여행 만들기</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu4" class="menu">
+                            <a href="">여행 상품</a>
+                            <ul class="depth2">
+                                <li class="cblue"><a href="">테마별 패키지</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">우리지역 대표상품</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cblue"><a href="">KTX+연계서비스</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">레일쉽-제주도(목포)</a></li>
+                                        <li><a href="">레일쉽-제주도(여수)</a></li>
+                                        <li><a href="">레일쉽-제주도(포항)</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cblue"><a href="">지역별 패키지</a>
+                                    <ul class="depth3 cblack">
+                                        <li><a href="">수도권</a></li>
+                                        <li><a href="">강원권</a></li>
+                                        <li><a href="">충청권</a></li>
+                                        <li><a href="">경상권</a></li>
+                                        <li><a href="">전라권</a></li>
+                                        <li><a href="">제주권</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cblue"><a href="">이달의 기차여행</a></li>
+                                <li class="cblue"><a href="">여행상품 예약확인</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu5" class="menu">
+                            <a href="">숙소 예약</a>
+                            <ul class="depth2 cblack">
+                                <li><a href="">호텔</a></li>
+                                <li><a href="">리조트</a></li>
+                                <li><a href="">민박</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="bluebox p_a">
+                    <a href="">회원가입</a>
+                    <a href="">로그인</a>
+                </div>
+            </div>
+        </header>
+        <div id="fullpage">
+            <section class="section" id="cnt1">
+            <div class="cnt"><!-- 불투명 박스 -->
+                <h3><img src="" alt="korail 로고"></h3>
+                <p>어디로 가시겠습니까?</p>
+                출발일
+                시간
+                출발역
+                도착역
+                인원
+                <div class="btn">
+                <a href="#" class="util p_a borderbox"><span>승차권 예매</span></a>
+                </div>
+                <div class="arrow">
+                    <span></span> <!-- 스크롤바 -->
+            </div>
+            </section>
+            <!-- <section class="section" id="cnt2">
+                <div class="cnt">                   
+                    <h3>레일스토리</h3>
+                        <p>RAILSTORY</p>
+                        <span></span> <!-- 레일스토리사진1
+                        <span></span> <!-- 레일스토리사진2
+                        <span></span> <!-- 레일스토리사진3
+                        <span></span> <!-- 레일스토리사진4
+                    <h3>할인상품</h3>  
+                        <p>DISCOUNT</p> 
+                        <span></span> <!-- 할인상품사진1
+                        <span></span> <!-- 할인상품사진2
+                        <span></span> <!-- 할인상품사진3
+                        <span></span> <!-- 할인상품사진4
+            </section>
+            <section class="section" id="cnt3">
+                <div class="cnt">
+                <h3></h3>
+            </section>          
+            -->
+        <footer id="footer">
+            <div class="in_foot">
+                <ul>
+                    <li><a href="#">홈페이지이용약관</a></li>
+                    <li><a href="#">여객운송약관/부속약관</a></li>
+                    <li class="privacy"><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">저작권정책</a></li>
+                    <li><a href="#">정보공개</a></li>
+                </ul>
+                <div class="longtxt">
+                    <p>대표자 : 손병석 | 상호 : 한국철도공사 | 사업자등록 : 314-52-10024 | 통신판매업신고 : 대전동구-0233호 <address> | 주소 : (34618) 대전광역시 동구 중앙로 240 </address> | TEL : 1544-7788 | FAX : 02-361-8385</p> 
+                </div>
+                <p class="copy">COPYRIGHT @ KOREA RAILROAD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
