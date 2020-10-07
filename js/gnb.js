@@ -1,7 +1,7 @@
 $(document).ready(function (){
 	var $gnb=$("#gnb > ul");
 			
-	$gnb.find("li ul").hide();	//depth2의 ul 태그는 자동으로 숨기고 시작
+	$gnb.find(">li>ul").hide();	//depth2의 ul 태그는 자동으로 숨기고 시작
 
 	//1)depth1 <a>에 마우스 진입:mouseenter, focus
 	$gnb.find("> li > a").on("mouseenter focus",function  () {
