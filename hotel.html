@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title> 호텔예약 </title>
+
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/hotel.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/datepiker.js"></script>
+    <script src="../js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#checkin").datepicker();
+            $('.slide ul').bxSlider({
+                pager: false,
+                prevText: '이전 컨텐츠 보기',
+                nextText: '다음 컨텐츠 보기',
+                minSlides:2,
+                maxSlides:2,
+                moveSlides:2,
+                slideWidth:603,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <article id="hotelSearch">
+            <div class="container">
+                <strong>국내호텔 예약은 코레일투어에서!</strong>
+                <form action="" method="" id="formBox">
+                    <div class="city">
+                        <label for="city" class="blind-b">여행장소</label> <input type="text" id="city" name="city"
+                            placeholder="어디로 여행하시나요?">
+                    </div>
+                    <div class="checkin">
+                        <label for="checkin">체크인</label> <input type="text" id="checkin">
+                    </div>
+                    <div class="checkout">
+                        <label for="checkout">체크아웃</label> <input type="text" id="checkout">
+                    </div>
+                    <div class="room"></div>
+                    <button type="button">호텔검색</button>
+                </form>
+
+            </div>
+        </article>
+        <article id="recommend">
+            <h3 class="txt_tit">도시별 추천숙소</h3>
+            <div id="localTab">
+                <ul role="tablist" class="tablist" aria-label="추천숙소의 도시">
+                    <li role="tab" class="tab first" id="tab1" aria-controls="tabpanel1">제주</li>
+                    <li role="tab" class="tab" id="tab2" aria-controls="tabpanel2">서울</li>
+                    <li role="tab" class="tab" id="tab3" aria-controls="tabpanel3">부산</li>
+                    <li role="tab" class="tab" id="tab4" aria-controls="tabpanel4">강릉</li>
+                    <li role="tab" class="tab" id="tab5" aria-controls="tabpanel5">속초</li>
+                    <li role="tab" class="tab" id="tab6" aria-controls="tabpanel6">전주</li>
+                    <li role="tab" class="tab" id="tab7" aria-controls="tabpanel7">인천</li>
+                    <li role="tab" class="tab last" id="tab8" aria-controls="tabpanel8">경주</li>
+                </ul>
+                <div role="tabpanel" class="tabpanel" id="tabpanel1" aria-labelledby="tab1">
+                    <ul>
+                        <li>
+                            <p>서귀포(서귀포시)에 위치</p>
+                            <p>더 아트 스테이 서귀호 하버</p>
+                            <p>55,140원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>제주(한림)에 위치</p>
+                            <p>라온호텔 &amp; 리조트</p>
+                            <p>56,120원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>제주(제주시)에 위치</p>
+                            <p>호텔 케니스토리 프리미엄 제주 연동 (구. 라마다 앙코르 제주 연동)</p>
+                            <p>62,864원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>제주(제주시)에 위치</p>
+                            <p>제주 오리엔탈호텔 카지노</p>
+                            <p>63,276원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tabpanel" id="tabpanel2" aria-labelledby="tab2">
+                    <ul>
+                        <li>
+                            <p>마리오 아울렛 부근에 위치</p>
+                            <p>신라스테이 구로</p>
+                            <p>63,940원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>덕수궁 부근에 위치</p>
+                            <p>신라스테이 서대문</p>
+                            <p>73,246원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>광화문 부근에 위치</p>
+                            <p>신라스테이 광화문</p>
+                            <p>74,096원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>전쟁기념관 부근에 위치</p>
+                            <p>롯데시티호텔 마포</p>
+                            <p>86,682원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tabpanel" id="tabpanel3" aria-labelledby="tab3">
+                    <ul>
+                        <li>
+                            <p>동백공원 부근에 위치</p>
+                            <p>이비스 버젯 앰배서더 부산 해운대</p>
+                            <p>50,038원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>부산 아쿠아리움 부근에 위치</p>
+                            <p>이비스 앰배서더 부산 해운대</p>
+                            <p>55,597원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>부산 아쿠아리움 부근에 위치</p>
+                            <p>라마다 앙코르 해운대</p>
+                            <p>83,505원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>부산 아쿠아리움 부근에 위치</p>
+                            <p>신라스테이 해운대</p>
+                            <p>97,857원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tabpanel" id="tabpanel4" aria-labelledby="tab4">
+                    <ul>
+                        <li>
+                            <p>허균.허난설헌 기념공원 부근에 위치</p>
+                            <p>호텔 큐브</p>
+                            <p>61,755원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>강릉 단오 문화관 부근에 위치</p>
+                            <p>강릉관광호텔</p>
+                            <p>77,510원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>오죽헌 시립박물관 부근에 위치</p>
+                            <p>호텔 이스트나인</p>
+                            <p>96,830원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>오죽헌 시립박물관 부근에 위치</p>
+                            <p>강릉 그레이 호텔</p>
+                            <p>104,075원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tabpanel" id="tabpanel5" aria-labelledby="tab5">
+                    <ul>
+                        <li>
+                            <p>동명항 부근에 위치</p>
+                            <p>위드유 호텔 &amp; 게스트하우스</p>
+                            <p>48,990원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>속초시립박물관 및 실향민 민속촌 부근에 위치</p>
+                            <p>현대 수 리조트 속초</p>
+                            <p>58,305원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>동명항 부근에 위치</p>
+                            <p>팜파스 리조트</p>
+                            <p>71,070원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>Seorak Cable Car 부근에 위치</p>
+                            <p>켄싱턴 호텔 설악</p>
+                            <p>77,232원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tabpanel" id="tabpanel6" aria-labelledby="tab6">
+                    <ul>
+                        <li>
+                            <p>동락원 부근에 위치</p>
+                            <p>재즈 어라운드 호텔</p>
+                            <p>69,920원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>전주 시청 부근에 위치</p>
+                            <p>로니호텔</p>
+                            <p>86,595원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>전주 영화종합촬영소 부근에 위치</p>
+                            <p>더클래식호텔</p>
+                            <p>127,535원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>전주 시청 부근에 위치</p>
+                            <p>라마다 전주</p>
+                            <p>146,280원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tabpanel" id="tabpanel7" aria-labelledby="tab7">
+                    <ul>
+                        <li>
+                            <p>스카이72 골프클럽 부근에 위치</p>
+                            <p>골든튤립 인천공항 호텔 &amp; 스위트</p>
+                            <p>65,407원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>인천(송도)에 위치</p>
+                            <p>라마다 송도 호텔</p>
+                            <p>81,765원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>인천(송도)에 위치</p>
+                            <p>송도 센트럴파크 호텔</p>
+                            <p>117,986원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>바닷가에 위치</p>
+                            <p>네스트 호텔 인천</p>
+                            <p>140,857원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tabpanel" id="tabpanel8" aria-labelledby="tab8">
+                    <ul>
+                        <li>
+                            <p>경주 민속공예촌 부근에 위치</p>
+                            <p>청공한옥스테이</p>
+                            <p>52,555원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>경주 스프링돔 부근에 위치</p>
+                            <p>켄싱턴리조트 경주</p>
+                            <p>65,794원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>Gyeongju Seorabeol Culture Hall 부근에 위치</p>
+                            <p>경주 지지 관광호텔</p>
+                            <p>92,230원<span>~</span></p>
+                        </li>
+                        <li>
+                            <p>화백국제컨벤션센터 부근에 위치</p>
+                            <p>베니키아 스위스 로젠 호텔</p>
+                            <p>92,911원<span>~</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article id="discount">
+            <h3 class="txt_tit">초특가 할인</h3>
+            <div class="slide">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>제주(제주시)에 위치</p>
+                            <p>휘슬락 호텔</p>
+                            <p>71,356원<span>~</span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>제주(제주시)에 위치</p>
+                            <p>호텔위드제주</p>
+                            <p>70,165원<span>~</span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>제주(애월)에 위치</p>
+                            <p>흰수염고래리조트</p>
+                            <p>70,035원<span>~</span></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>서귀포(성산)에 위치</p>
+                            <p>브라운 스위트 제주 호텔 앤 리조트</p>
+                            <p>70,150원<span>~</span></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+        <article id="notice">
+            <ul class="notice">
+                <li>
+                    <p>코로나 바이러스 공지</p>
+                    <p>예약 및 취소 관련안내</p>
+                    <img src="../images/icon/hotel/virus1.png" alt="">
+                </li>
+                <li>
+                    <p>당일 호텔 특가</p>
+                    <p>갈까말까 고민말고 고!</p>
+                    <img src="../images/icon/hotel/hotel1.png" alt="">
+                </li>
+                <li>
+                    <p>강력 秋천!</p>
+                    <p>가을 얼리버드 특가<br>인생 단풍여행</p>
+                    <img src="../images/icon/hotel/maple1.png" alt="">
+                </li>
+            </ul>
+        </article>
+    </section>
+
+</body>
+
+</html>

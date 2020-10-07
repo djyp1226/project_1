@@ -1,35 +1,50 @@
 @charset "utf-8";
 
 /* index 공통 */
-.header{position: fixed;top: 0;left: 0;width: 100%; z-index: 100;}
+#header{position: fixed;top: 0;left: 0;width: 100%; z-index: 100;}
 /* index 1 */
-#cnt1{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-center;align-items: stretch;text-align: center;color: #000000;background: #fff;background: url("../images/main/index1_bg.PNG") no-repeat center top;background-size: cover;height: 839px;}
+#cnt1{text-align: center;color: #000000;background: #fff;background: url("../images/main/index1_bg.PNG") no-repeat center top; padding-top: 100px; background-size: cover;height: 839px;}
 
-/* .section .cnt {background: pink;} */
-.section .cnt .whiteBox{position: relative; top: 150px; left: 80px; width: 1200px;height: 300px; background: rgba(255, 255, 255, 0.6);}
+/* #cnt1 .cnt{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-center;align-items: stretch;} */
+.section .cnt .whiteBox{position: relative; top: 100px; left: 80px; width: 1200px;height: 300px; background: rgba(255, 255, 255, 0.6);}
 .section .cnt h3{width: 1200px; height: 180px; padding-top: 70px; margin-bottom: 38px;}
 .section .cnt h3::after{content: ""; position: absolute; width: 670px; height: 1px; left: 273px; top: 180px; background-color: #333;}
-.section .cnt p{position: absolute; top: 219px; left: 442px; font-weight: 700; font-size: 35px; color: #333;}
+.section .cnt .where{position: absolute; top: 219px; left: 442px; font-weight: 700; font-size: 35px; color: #333;}
 
-#cnt1 .mainchoice {position: absolute; top: 450px;}
+#mainchoice {float: left; position: relative; margin: 220px auto; width: 1360px; height: 70px; left: 280px; font-size: 20px; color: #000; font-weight: 400;background: rgba(255, 255, 255,0.93);}
 
-/* #formBox{position: relative; padding-top: 11px;}
-#formBox,#formBox div{height: 70px;}
-#formBox div{position: relative;float: left;}
-#formBox div input,#formBox button{height: 100px;font-size: 18px;line-height: 100px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-#formBox label{background: #083B82;}
-#formBox #startDay{width: 380px;}
-#formBox #startStation{width: 235px;}
-#formBox #arrivalStaion{width: 235px;}
-#formBox #startHour{width: 290px;background: #fff;}
-#formBox #start{width: 290px;background: #fff;}
-#formBox button{position: relative;width: 220px;background: #083B82;text-align: center;font-size: 18px;} */
+#mainchoice #formBox{float: left; height: 70px;line-height: 70px;}
+#mainchoice #formBox p{display: inline-block;}
+#mainchoice #formBox label,#mainchoice #formBox input,#mainchoice #formBox select{float: left;}
+#mainchoice #formBox label{display: inline-block;background: #083B82;}
+#mainchoice #formBox input, #mainchoice #formBox select{border: none; padding: 0;}
+#mainchoice #formBox div input{height: 70px;font-size: 18px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; }
+#mainchoice .startDay{position: absolute; width: 390px; height: 70px; }
+#mainchoice .startDay .textDay{width: 140px;color: #ffffff;}
+#mainchoice .startDay #startDay{text-align: center; width: 250px;}
+#mainchoice .travelTime{position: absolute; left: 390px; width: 280px; height: 70px; line-height: 70PX; }
+#mainchoice .travelTime .textTime{width: 100px;color: #ffffff;}
+#mainchoice .travelTime #startHour{position: absolute; height: 70px; left: 125px;}
+#mainchoice .travelTime .textHour{position: absolute; left: 170px;}
+#mainchoice .travelTime #startMinute{position: absolute;height: 70px; left: 190px;}
+#mainchoice .travelTime .textMinute{position: absolute; left: 235px;}
+#mainchoice .startStation #textStation{width: 120px;height: 70px;color: #ffffff;}
+#mainchoice .startStation{position: absolute; left: 670px; width: 1200px;height: 70px;}
+#mainchoice .startStation #startStationBox{position: absolute; width: 130px; left: 120px;}
+#mainchoice .arrivalStation{position: absolute; left: 920px; width: 250px;height: 70px;background: #820870;}
+#mainchoice .arrivalStation #arrivalStationBox {position: absolute; left: 120px; width: 130px;}
+#mainchoice .arrivalStation #textStation{width: 120px;height: 70px;color: #ffffff;}
 
-.section .cnt .btn a{position: absolute;display: table; top: 760px; left: calc(50% - 100px); width: 200px; height: 80px; color: #fff; font-size: 25px; line-height: 80px; border: 1px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; transition: all 0.5s;}
-.section .cnt .btn a:hover, section .cnt .btn a:focus{background: #083b82;border-color:#083b82;}
+#mainchoice .persons{position: absolute; left: 1170px; width: 190px;height: 70px; text-align: center;}
+#mainchoice .persons #persons{position: absolute; height: 70px; width: 50px; left: 130px;}
+#mainchoice .persons .textPersons{width: 100px; color: #ffffff;}
+/* #mainchoice button{position: relative;width: 220px;background: #083B82;text-align: center;font-size: 18px;} */
+
+.section .btn a{position: absolute;display: table; top: 760px; left: calc(50% - 100px); width: 200px; height: 80px; color: #fff; font-size: 25px; line-height: 80px; border: 1px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; transition: all 0.5s;}
+.section .btn a:hover, section .btn a:focus{background: #083b82;border-color:#083b82;}
 
 /* .section .cnt .arrow span{position: absolute; } */
-.section .cnt .arrow span{display: block; position: absolute; top: 860px; left: calc(50% - 15px); background: url("../images/main/arrow.png") no-repeat; width: 30px;height: 30px;}
+.section .arrow span{display: block; position: absolute; top: 860px; left: calc(50% - 15px); background: url("../images/main/arrow.png") no-repeat; width: 30px;height: 30px;}
 
 .arrow span{top: 13px;-webkit-animation: arrow 3s 0s infinite;-moz-animation: arrow 1s 0s infinite;-o-animation: arrow 1s 0s infinite;animation: arrow 1s 0s infinite;} 
 
@@ -51,4 +66,26 @@
  }
 
 /* index 2 */
+image {display: block;}
+
+#cnt2 {float: left; width: 100%; height: 800px; background: yellow; }
+#cnt2 .cnt .main4{margin: 50px auto; height: 310px; background: green;}
+#cnt2 .cnt .main4 ul li+li{margin-left: 50px;}
+
+#cnt2 #railstory{height: 310px; background: blue;float: left;}
+#cnt2 #railstory h4{font-size: 35px; letter-spacing: 3.5px;}
+#cnt2 #railstory h4::before{content: "";position: absolute; top: 0;left: 0; background: url("../images/main/railstory_bg.png"); }
+#cnt2 #railstory ul{top: 0; left: 0;}
+
+/* #cnt2 #railstory li a::after,#cnt2 #railstory li a::after{content: ""; position: absolute; top: 0;left: 0; width: 100%;height: 100%; transition: background 0.3s;}
+#cnt2 #railstory li a::after:hover,#cnt2 #railstory li a::after:focus{background: #000;} */
+
+#cnt2 #discount{background: rgb(128, 0, 87); float: left;}
+
+/* 할인상품 스크립트연결
+#cnt2 #discount li.on{margin-top: -30px;}
+#cnt2 #discount li.on h5{bottom: 310px;}
+#cnt2 #discount li.on .over{bottom: 0;}
+#cnt2 #discount li, #cnt2 #discount li strong, #cnt2 #discount li .over{transition: all 0.5s;} */
+
 /* index 3 */
