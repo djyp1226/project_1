@@ -76,7 +76,7 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 .login .member{position: relative;font-size: 15px;}
 .login h2{font-size: 20px; padding-bottom: 30px;} 
 .login .member table{width: 350px;height: 50px; line-height: 50px;}
-.login .member tr{border: 1px solid #000; height: 50px;}
+.login .member tr{border: 1px solid #d0d0d0; height: 50px;}
 .login .member th{width: 100px;} 
 .login .member td input{width: 250px;height: 50px; border: none;}
 
