@@ -2,28 +2,34 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title> 로그인 </title>
-    <link rel="stylesheet" href="">
-    <style>
-    fieldset{border: none;}
-    body, ul, h1, h2, p, th, td, form, fieldset{margin: 0;padding: 0;}
-    h1, h2{font-size: inherit;}
-    table{border-spacing: 0;border-collapse: collapse;}
-    caption{width: 1px;height: 1px;overflow: hidden;border: none;margin: -1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}/* 주의점 caption은 absolute, 테이블 영역 외부로 나가서도 안된다- th와 td의 디자인에 영향을 미침 */
-    legend{width: 1px;height: 1px;overflow: hidden;border: none;position: absolute;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
-    input, select, textarea, button{font-family: inherit;color: inherit;font-size: inherit;}/* 폼컨트롤요소 모두 부모로 부터 폰트 속성을 상속받지 못한다 */
-    input[type="text"], input[type="password"], select{border: 1px solid #aaa;}
-    /* text, password, select만 선택해서 테두리 설정
-    속성선택자 
-    input[type="text"] => input태그중에서 type속성이 text인 선택자
-    div[id] => div 태그 중에서 id 속성을 가진 선택자
-    */
-    /* 포커스가 갈수 있는 태그 종류 : a, input, select, textarea, button */
-    input[type="submit"], input[type="reset"]{border: none;background: none;cursor: pointer;}
-    </style>
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    
+
+  <div id="skip">
+    <a href="#fullpage">본문 바로가기</a> 
+</div>
+<div id="wrap">
+    <header id="header">
+        <div class="area clearfix p_r">
+            <h1 class="logo p_a">
+                <a href=""><img src="images/common/nav_logo.png" alt="레츠코레일"></a>
+            </h1>
+            <nav id="gnb">
+                <h2 class="blind-b">주메뉴</h2>
+                <ul class="depth1 cblack clearfix">
+
+                </ul>
+            </nav>
+            <div class="bluebox p_a">
+                <a href="">회원가입</a>
+                <a href="">로그인</a>
+            </div>
+        </div>
+    </header>
+</div>
       <!-- 
         * 버튼의 기능을 하는 폼요소는 id, label 사용하지 않음
         input type="image" 이미지 파일로 버튼을 구성하는 경우
@@ -35,88 +41,96 @@
         button type="button"
         maxlength="12"  최대 입력 글자수
      -->
-     홈 > 로그인
-  <section id="content" class="login">
-    <h1 class="title">로그인</h1>
-    <h2 class="member">회원 로그인</h2>
-    <ul class="bubble">
-        <li>SMS,이메일, 우편물 수신 동의하실 사이트를 선택해주시기 바랍니다.</li>
-        <li>사이트별 이벤트 안내 및 쿠폰 적립 중 다양한 혜택을 수신 동의하신 고객님의 SMS, 이메일, 우편물로 안내 됩니다.</li>
-    </ul>
+     
+     <div class="zoomTool" style="font-size:16px; font-weight:bold; position:absolute; top:93px; right: 10px; ">
+      <a href="#" onclick="pageZoomPlus()">
+        <div style="display:table-cell;border:1px solid #bbb; border-right:none; padding:5px 13px;">+ 확대</div></a>
+        <a href="#" onclick="pageZoomMinus()">
+          <div style="display:table-cell;border:1px solid #bbb; padding:5px 13px;">- 축소</div></a></div>
+          document.querySelector("#content-box > div.sub-top > div")
+          
+<div id="login_page" class="area">
+  <strong class="login_minitxt">홈 > 로그인</strong>
 
-    아이디
-    멤버십번호, 이메일, 휴대전화번호 입력
-    비밀번호 
-    비밀번호 입력
-    <fieldset id="remember">
-    <form action="data.html" method="get" id="formBox">
-    <input type="checkbox" id="idremember" name="idremember" value="아이디기억"><label for="idremember">아이디기억</label>
-    </form>
-    </fieldset>
+  <section id="login_content" class="login">
+    <h1 class="title blind-b">로그인</h1>
+      <div id="member_div" class="member">
+        <h2 class="mb_txt">회원 로그인</h2>
+        <!-- <ul class="bubble" >
+            <li>로그인 후 10분간 입력이 없을 경우 자동으로 로그아웃 됩니다.</li>
+            <li>홈>마이페이지>회원정보 관리>이메일/휴대폰 인증 에서<br>이메일, 휴대폰 인증을 받으시면 이메일 또는 휴대폰번호로 로그인할 수 있습니다.</li>
+        </ul> -->
+        <form action="login.html" method="get" id="join">
+          <table>
+            <caption>회원 로그인</caption>  
+            <tr class="idtable">
+              <th scope="row">
+                <label for="uid">아이디</label>
+              </th>
+              <td>
+                <input type="text" id="uid" name="uidname" placeholder="멤버십번호, 이메일, 휴대전화번호 입력" maxlength="12">
+              </td>
+            </tr>
+            <tr class="pwtable">
+              <th scope="row">
+                <label for="upw">비밀번호</label>
+              </th>
+              <td>
+                <input type="password" id="upw" name="upw" maxlength="8" placeholder="비밀번호 5회 오류시 로그인 불가">
+              </td>
+            </tr>
+          </table>
+        </form>
 
-    <div class="btn">
-        <input type="submit" value="로그인">
+        <fieldset class="remember p_a">
+          <form action="data.html" method="get" id="formBox">
+              <input type="checkbox" id="idremember" name="idremember" value="아이디기억"><label for="idremember">아이디기억</label>
+          </form>
+        </fieldset>
+
+        <div class="login_btn p_a"><input type="submit" value="로그인"></div>
+
+        <ul class="btn3">
+          <li>
+            <a href="">
+              <button type=”button”>아이디 찾기</button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button type=”button”>비밀번호 찾기</button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button type=”button”>멤버십 가입</button>
+            </a>
+          </li>
+        </ul>
       </div>
-
-    버튼 a/아이디 찾기
-    버튼 a/비밀번호 찾기
-    버튼 a/멤버십 가입
-
-    <form action="member.html" method="get" id="join">
-      <table>
-        <!-- 접근성1 제목 작성 -->
-        <caption>필수입력 4가지 항목</caption>
-
-        <!-- 세로열 구분 -->
-        <colgroup>
-          <col class="w250">
-          <col class="w750">
-        </colgroup>
-
-        <!-- 가로행 구분 : tbody만 있는 경우 생략하고 바로 tr부터 작성 가능 -->
-        <tr>
-          <th scope="row">
-            <label for="uid">아이디</label>
-          </th>
-          <td>
-            <input type="text" id="uid" name="uidname" value="value속성으로 작성" maxlength="12">
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">
-            <label for="upw">비밀번호</label>
-          </th>
-          <td>
-            <input type="password" id="upw" name="upw" maxlength="8">
-          </td>
-        </tr>
-        <!-- <tr>
-          <th scope="row">
-            생일
-          </th>
-          <td>
-            <select name="birthMonth" id="birthMonth" title="생일의 월">
-              <!-- <option value="">월</option> 첫번째 옵션이 제목을 대신하면 접근성 위배
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3" selected>3</option><!-- 가장 첫번째 옵션이 먼저 보이는데 만약 다른 옵션을 보이게 하려면 selected 추가
-            </select> 월
-            <select name="birthDate" id="birthDate" title="생일의 일">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select> 일
-          </td>
-        </tr>-->
-        </tr>
-        가상요소보더
-        <h2 class="nonmember">비회원 로그인</h2>
-        반환/재발권 영수증
-        미등록 고객 예매
-      </table>
-
-
-    </form>
+      <div id="nonmember">
+          <span></span> 
+          <h2 class="nmb_txt">비회원 로그인</h2>
+          <ul>
+            <li>
+                <a href="">
+                  <button type=”button”>반환/재발권 영수증</button>
+                </a>            
+            </li>
+            <li>
+                <a href="">
+                  <button type=”button”>미등록 고객 예매</button>
+                </a>
+            </li>
+          </ul>
+        </div>
+      <div id="graybox">
+        <ul>
+          <li>로그인 후 10분간 입력이 없을 경우에 자동으로 로그아웃 됨</li>
+          <li>홈>마이페이지>회원정보 관리>이메일/휴대폰 인증에서<br>이메일,휴대폰 인증을 받으면 이메일 또는 휴대폰번호로 로그인 가능</li>
+        </ul>
+      </div>
   </section>
+</div>
 </body>
 </html>
