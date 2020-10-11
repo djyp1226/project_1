@@ -69,10 +69,12 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 /* login */
 #login_page{padding-top: 100px; color: #083b82;}
 .login_minitxt{display: block; font-size: 13px; font-weight: normal;}
-.login{margin: 50px auto; width: 480px; height: 450px; border: 1px solid #d0d0d0; padding: 40px;}
+.login{margin: 50px auto; width: 480px; height: 450px;  padding: 40px;}
+/* border: 1px solid #d0d0d0; */
+#login_content{margin-top: 20px;}
+
 .login .member{position: relative;font-size: 15px;}
 .login h2{font-size: 20px; padding-bottom: 30px;} 
-/* 질문: tr사이 */
 .login .member table{width: 350px;height: 50px; line-height: 50px;}
 .login .member tr{border: 1px solid #000; height: 50px;}
 .login .member th{width: 100px;} 
@@ -89,7 +91,7 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 /* 비회원 */
 #nonmember {position: relative; top: 150px; width: 100%; height: 230px; font-size: 15px;}
 #nonmember .nmb_txt{padding-top: 40px;}
-#nonmember span{position: absolute; top: -20px;left: 30px; display: block; width: 400px;height: 1px; background: #d0d0d0; margin: 20px 0;}
+#nonmember span{position: absolute; top: -20px;left: calc(50% - 240px); display: block; width: 480px;height: 1px; background: #d0d0d0; margin: 20px 0;}
 #nonmember ul{margin: 0 10px;}
 #nonmember ul li {float: left;}
 #nonmember ul li+li{margin-left: 30px;}
@@ -97,10 +99,17 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #nonmember ul li a:hover,#nonmember ul li a:focus{background: #083b82; color:#fff;}
 
 /* 로그인 설명글 */
-#graybox{margin: 760px auto; position: absolute; left: 480px; top: 0;border: 1px solid #d0d0d0; font-size: 15px; padding: 40px 20 40px 0px; height: 120px; width: 480px;}
-
+#graybox{position: absolute; left: calc (50% - 60px); top: 740px;border: 1px solid #d0d0d0; font-size: 15px;  height: 120px;}
 #graybox ul{line-height: 18px;color:#083b82 ; padding: 30px;}
 #graybox ul li{display: block;}
 #graybox ul li+li{margin-top: 10px;}
+#graybox ul li img{width: 20px;height: 20px; margin-right: 5px;}
 
-/* 질문: tr사이, 확대축소, 로그인 텍스트 가운데로 마진오토x */
+/* 
+질문
+
+.login .member tr사이 위아래 떨어지게 하는 법, 
+
+확대축소 기능은 자바스크립트로 넣어야하는건가요?, 
+참고사이트:http://www.seoulmetro.co.kr/kr/index.do?device=PC#firstPage
+*/

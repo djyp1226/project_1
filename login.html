@@ -53,83 +53,83 @@
   <strong class="login_minitxt">홈 > 로그인</strong>
 
   <section id="login_content" class="login">
-    <h1 class="title blind-b">로그인</h1>
-      <div id="member_div" class="member">
-        <h2 class="mb_txt">회원 로그인</h2>
-        <!-- <ul class="bubble" >
-            <li>로그인 후 10분간 입력이 없을 경우 자동으로 로그아웃 됩니다.</li>
-            <li>홈>마이페이지>회원정보 관리>이메일/휴대폰 인증 에서<br>이메일, 휴대폰 인증을 받으시면 이메일 또는 휴대폰번호로 로그인할 수 있습니다.</li>
-        </ul> -->
-        <form action="login.html" method="get" id="join">
-          <table>
-            <caption>회원 로그인</caption>  
-            <tr class="idtable">
-              <th scope="row">
-                <label for="uid">아이디</label>
-              </th>
-              <td>
-                <input type="text" id="uid" name="uidname" placeholder="멤버십번호, 이메일, 휴대전화번호 입력" maxlength="12">
-              </td>
-            </tr>
-            <tr class="pwtable">
-              <th scope="row">
-                <label for="upw">비밀번호</label>
-              </th>
-              <td>
-                <input type="password" id="upw" name="upw" maxlength="8" placeholder="비밀번호 5회 오류시 로그인 불가">
-              </td>
-            </tr>
-          </table>
-        </form>
-
-        <fieldset class="remember p_a">
-          <form action="data.html" method="get" id="formBox">
-              <input type="checkbox" id="idremember" name="idremember" value="아이디기억"><label for="idremember">아이디기억</label>
+      <h1 class="title blind-b">로그인</h1>
+        <div id="member_div" class="member">
+          <h2 class="mb_txt">회원 로그인</h2>
+          <!-- <ul class="bubble" >
+              <li>로그인 후 10분간 입력이 없을 경우 자동으로 로그아웃 됩니다.</li>
+              <li>홈>마이페이지>회원정보 관리>이메일/휴대폰 인증 에서<br>이메일, 휴대폰 인증을 받으시면 이메일 또는 휴대폰번호로 로그인할 수 있습니다.</li>
+          </ul> -->
+          <form action="login.html" method="get" id="join">
+            <table>
+              <caption>회원 로그인</caption>  
+              <tr class="idtable">
+                <th scope="row">
+                  <label for="uid">아이디</label>
+                </th>
+                <td>
+                  <input type="text" id="uid" name="uidname" placeholder="멤버십번호, 이메일, 휴대전화번호 입력" maxlength="12">
+                </td>
+              </tr>
+              <tr class="pwtable">
+                <th scope="row">
+                  <label for="upw">비밀번호</label>
+                </th>
+                <td>
+                  <input type="password" id="upw" name="upw" maxlength="8" placeholder="비밀번호 5회 오류시 로그인 불가">
+                </td>
+              </tr>
+            </table>
           </form>
-        </fieldset>
 
-        <div class="login_btn p_a"><input type="submit" value="로그인"></div>
+          <fieldset class="remember p_a">
+            <form action="data.html" method="get" id="formBox">
+                <input type="checkbox" id="idremember" name="idremember" value="아이디기억"><label for="idremember">아이디기억</label>
+            </form>
+          </fieldset>
 
-        <ul class="btn3">
-          <li>
-            <a href="">
-              <button type=”button”>아이디 찾기</button>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <button type=”button”>비밀번호 찾기</button>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <button type=”button”>멤버십 가입</button>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div id="nonmember">
-          <span></span> 
-          <h2 class="nmb_txt">비회원 로그인</h2>
-          <ul>
+          <div class="login_btn p_a"><input type="submit" value="로그인"></div>
+
+          <ul class="btn3">
             <li>
-                <a href="">
-                  <button type=”button”>반환/재발권 영수증</button>
-                </a>            
+              <a href="">
+                <button type=”button”>아이디 찾기</button>
+              </a>
             </li>
             <li>
-                <a href="">
-                  <button type=”button”>미등록 고객 예매</button>
-                </a>
+              <a href="">
+                <button type=”button”>비밀번호 찾기</button>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <button type=”button”>멤버십 가입</button>
+              </a>
             </li>
           </ul>
         </div>
-      <div id="graybox">
-        <ul>
-          <li>로그인 후 10분간 입력이 없을 경우에 자동으로 로그아웃 됨</li>
-          <li>홈>마이페이지>회원정보 관리>이메일/휴대폰 인증에서<br>이메일,휴대폰 인증을 받으면 이메일 또는 휴대폰번호로 로그인 가능</li>
-        </ul>
-      </div>
+        <div id="nonmember">
+            <span></span> 
+            <h2 class="nmb_txt">비회원 로그인</h2>
+            <ul>
+              <li>
+                  <a href="">
+                    <button type=”button”>반환/재발권 영수증</button>
+                  </a>            
+              </li>
+              <li>
+                  <a href="">
+                    <button type=”button”>미등록 고객 예매</button>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        <div id="graybox">
+          <ul>
+            <li><img src="images/login/txt.png" alt="">로그인 후 10분간 입력이 없을 경우에 자동으로 로그아웃 됨</li>
+            <li><img src="images/login/txt.png" alt="">홈>마이페이지>회원정보 관리>이메일/휴대폰 인증에서<br>이메일,휴대폰 인증을 받으면 이메일 또는 휴대폰번호로 로그인 가능</li>
+          </ul>
+        </div>
   </section>
 </div>
 </body>
