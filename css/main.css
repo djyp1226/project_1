@@ -60,13 +60,12 @@
 #cnt2 #discount a{display: block;}
 #cnt2 #discount ul li .img{overflow: hidden;}
 #cnt2 #discount ul li .img img{height: 195px;-o-transition: transform .35s;-moz-transition: transform .35s;-webkit-transition: transform .35s;transition: transform .35s;}
-#cnt2 #discount ul li .img img:hover,#cnt2 #discount ul li .img img:focus{transform:scale(1.1);-o-transform:scale(1.1);-moz-transform:scale(1.1);-webkit-transform:scale(1.1);}
+#cnt2 #discount ul li a:hover .img img,#cnt2 #discount ul li  a:focus .img img{transform:scale(1.1);-o-transform:scale(1.1);-moz-transform:scale(1.1);-webkit-transform:scale(1.1);}
 #cnt2 #discount ul li h5{ font-weight: 700;font-size: 23px; font-weight: 700; text-align: center;line-height: 90px; height: 90px;}
 #cnt2 #discount ul li a{display: block;}
 #cnt2 #discount ul li span{position: absolute; display: block; width: 300px; top: 220px; text-align: center; }
-#cnt2 #discount ul li:hover ,#cnt2 #discount ul li a:focus{background: url("../images/main/discount_over_txtbg.png"); }
+#cnt2 #discount ul li a:hover ,#cnt2 #discount ul li a:focus{background: url("../images/main/discount_over_txtbg.png"); }
 #cnt2 .main4 #on a:hover ,#cnt2 #discount ul li a:focus{color: #ffffff;}
-/* 질문:이미지뿐만 아니라 li에도 포커스갈때 이미지 커지게, 글씨색깔 오버할때 #fff */
 /* 질문:가로스크롤바가 생겨요 ㅜㅜ */
 
 /* 공지사항 */
