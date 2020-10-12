@@ -61,11 +61,11 @@
 #cnt2 #discount ul li .img{overflow: hidden;}
 #cnt2 #discount ul li .img img{height: 195px;-o-transition: transform .35s;-moz-transition: transform .35s;-webkit-transition: transform .35s;transition: transform .35s;}
 #cnt2 #discount ul li .img img:hover,#cnt2 #discount ul li .img img:focus{transform:scale(1.1);-o-transform:scale(1.1);-moz-transform:scale(1.1);-webkit-transform:scale(1.1);}
-#cnt2 #discount ul li h5{ font-weight: 700;font-size: 23px; font-weight: 700; text-align: center; padding-top: 30px;}
+#cnt2 #discount ul li h5{ font-weight: 700;font-size: 23px; font-weight: 700; text-align: center;line-height: 90px; height: 90px;}
 #cnt2 #discount ul li a{display: block;}
 #cnt2 #discount ul li span{position: absolute; display: block; width: 300px; top: 220px; text-align: center; }
 #cnt2 #discount ul li:hover ,#cnt2 #discount ul li a:focus{background: url("../images/main/discount_over_txtbg.png"); }
-#cnt2 #discount ul li a:hover ,#cnt2 #discount ul li a:focus{color: #ffffff;}
+#cnt2 .main4 #on a:hover ,#cnt2 #discount ul li a:focus{color: #ffffff;}
 /* 질문:이미지뿐만 아니라 li에도 포커스갈때 이미지 커지게, 글씨색깔 오버할때 #fff */
 /* 질문:가로스크롤바가 생겨요 ㅜㅜ */
 
@@ -78,8 +78,8 @@
 #cnt3 .cnt .notice li a{display: inline-block; left: 300px; padding-left: 70px;}
 #cnt3 .cnt .notice li span{display: inline-block; position: absolute; left: 1010px; }
 #cnt3 .cnt .notice li img{display: inline-block; position: absolute; top: 25px; right: 110px;}
-#cnt3 .cnt .notice li:hover,#cnt3 .cnt .notice li a:focus{background: url("../images/main/notice_li_bg_over.png")no-repeat center top; width: 100%;height: 90px; left: 0px;}
-#cnt3 .cnt .notice li a:hover,#cnt3 .cnt .notice li a:focus{text-decoration: underline;}
+#cnt3 .cnt .notice li:hover,#cnt3 .cnt .notice li a:focus{display: block; background: url("../images/main/notice_li_bg_over.png")no-repeat center top; width: 100%;height: 90px; padding: 0;text-decoration: underline;}
+#cnt3 .cnt .notice li a:focus, #cnt3 .cnt .notice li a:hover{display: block; text-decoration: underline; left: 50px;}
 
 /* 빠른메뉴 */
 #cnt4 {margin: 0 auto; padding: 50px 30px;}

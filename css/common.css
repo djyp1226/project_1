@@ -65,6 +65,7 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #header .bluebox a{float: left; text-align: center; width: 90px;height: 30px; line-height: 30px; background-color: #083b82; color: #fff; border: 1px solid #083b82; }
 #header .bluebox a+a{margin-left: 20px;}
 #header .bluebox a:hover, #gnb .bluebox a:focus{background: #fff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
+#header .bluebox a:focus{outline:3px solid #fc4a1e;}
 
 /* 툴팁 */
 #fp-nav ul li:last-child{display: none;}
