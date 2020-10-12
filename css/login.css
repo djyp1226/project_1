@@ -67,7 +67,7 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #header .bluebox a:hover, #gnb .bluebox a:focus{background: #fff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
 
 /* login */
-#fullpage{padding-top: 130px; }
+#login_page{padding-top: 130px; }
 #login_content{height: 700px;color: #083b82;}
 .login_minitxt{display: block; font-size: 13px; font-weight: normal;}
 .login{margin: 0 auto; width: 480px; height: 470px; padding: 50px 40px;}
