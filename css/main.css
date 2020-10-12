@@ -116,10 +116,10 @@
 
 /* footer */
 #footer{height: 300px; margin: 200px auto 0 auto;border-top: 1px solid #333333;}
-#footer ul{height: 19px;margin-bottom: 131px;padding-top: 50px;}
+#footer ul{height: 19px;margin-bottom: 131px;padding-top: 50px; }
 #footer ul li{float: left;width: 270px;text-align: center;line-height: 18px;}
 #footer ul li+li{border-left: 1px solid #083b82;}
 #footer .privacy{color: #083b82;}
-#footer .longtxt{float: left;font-size: 17px }
+#footer .longtxt{float: left;font-size: 17px; margin-bottom: 10px;}
 #footer p, address{display: inline-block;font-size: 17px;}
-#footer .copy{margin-bottom: 45px;}
+#footer .copy{margin-bottom: 45px; font-style: italic;}

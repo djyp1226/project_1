@@ -67,17 +67,18 @@ body{font-family: "Noto Sans KR"; font-size: 18px; font-weight: 400; color: #333
 #header .bluebox a:hover, #gnb .bluebox a:focus{background: #fff; color: #083b82; border: 1px solid#083b82;transition:all 0.3s;}
 #header .bluebox a:focus{outline:3px solid #fc4a1e;}
 
+
 /* 툴팁 */
 #fp-nav ul li:last-child{display: none;}
 #fp-nav ul li .fp-tooltip{color: #000;}
 #fp-nav ul li a.active + .fp-tooltip{opacity: 1;}
 
 /* footer */
-#footer{height: 300px; margin: 200px auto;border-top: 1px solid #333333;background: gray;}
-#footer ul{height: 19px;margin-bottom: 131px;padding-top: 50px;}
+#footer{height: 300px; margin: 200px auto 0 auto;border-top: 1px solid #333333;}
+#footer ul{height: 19px;margin-bottom: 131px;padding-top: 50px; }
 #footer ul li{float: left;width: 270px;text-align: center;line-height: 18px;}
 #footer ul li+li{border-left: 1px solid #083b82;}
 #footer .privacy{color: #083b82;}
-#footer .longtxt{float: left;font-size: 17px }
+#footer .longtxt{float: left;font-size: 17px; margin-bottom: 10px;}
 #footer p, address{display: inline-block;font-size: 17px;}
-#footer .copy{margin-bottom: 45px;}
+#footer .copy{margin-bottom: 45px; font-style: italic;}
