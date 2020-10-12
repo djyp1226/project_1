@@ -5,7 +5,7 @@
 /* index 1 */
 #cnt1{ text-align: center;color: #000000;background: #fff;background: url("../images/main/index1_bg.PNG") no-repeat center top; padding-top: 100px; background-size: cover; height: 920px;}
 .section .cnt .whiteBox {width: 1200px;height: 300px; background: rgba(255, 255, 255, 0.6); margin: 50px auto; }
-.section .cnt h3{width: 100%; height: 150px; padding-top: 50px; margin: 0 auto; }
+.section .cnt h3{height: 150px; padding-top: 50px; margin: 0 auto; }
 .section .cnt .where{position: relative; width: 100%;  font-weight: 700; font-size: 35px; color: #333; margin-bottom: 50px;}
 .section .cnt .where::before{content: ""; position: absolute; width: 670px; height: 1px; left: calc(50% - 335px); top: -30px; background-color: #333;}
 
@@ -70,7 +70,7 @@
 /* 질문:가로스크롤바가 생겨요 ㅜㅜ */
 
 /* 공지사항 */
-#cnt3 .cnt{ position: relative;background: url("../images/main/notice_bg.png"); height: 500px; top: -20px; }
+#cnt3 .cnt{ position: relative; background: url("../images/main/notice_bg.png"); height: 500px; top: -20px; left: 0;}
 #cnt3 h3{font-size: 35px; letter-spacing: 3.5px; position: absolute; top: 0px;left: 20%;color: #ffffff;padding-top: 60px;}
 #cnt3 .cnt .notice{margin: 0 auto;}
 #cnt3 .cnt .notice li{ position: relative; top: 135px; left: 0px; background: url("../images/main/notice_li_bg.png")no-repeat center top; width: 100%; height: 90px; line-height: 90px; font-size: 20px; cursor: pointer;transition: 0.2s;}
